@@ -1,92 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaxProx - Auditors & Tax Practitioners</title>
+  <title>TaxProx: Premier Tax Consultants & Company Registration Experts in Edakkara</title>
   
   <!-- SEO Metadata -->
-  <meta name="description" content="TaxProx, located in Edakkara, Malappuram District, offers expert services in Accounting, Income Tax, GST, Auditing, Trade Mark Registration, LLP or Partnership Formation, Pan Card, and more. Contact us for reliable business solutions.">
-  <meta name="keywords" content="Accounting, Income Tax, GST Services, Auditing, Trade Mark Registration, LLP Formation, Partnership Formation, Pan Card, Business Services, Edakkara, Nilambur, Malappuram, TaxProx">
-  <meta name="author" content="TaxProx">
+  <meta name="description" content="Top-rated Income Tax, GST, & Company Registration services in Edakkara, Nilambur. Your local experts for PAN Card, Auditing & Business Compliance. ☎ 9846224226">
+  <meta name="keywords" content="best income tax help Edakkara, company registration Nilambur, PAN Card services Vazhikkadavu, GST consultants Chungathara, Auditing services Malappuram">
   
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="TaxProx - Auditors & Tax Practitioners">
-  <meta property="og:description" content="Expert Accounting, Income Tax, GST, Auditing, Trade Mark Registration, LLP Formation, and other business services. Serving Edakkara, Nilambur, and beyond.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://username.github.io">
-  <meta property="og:image" content="https://username.github.io/images/taxprox-banner.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Twitter Card Metadata -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TaxProx - Auditors & Tax Practitioners">
-  <meta name="twitter:description" content="Reliable Accounting, Tax, and Business Services in Edakkara, Nilambur. Contact TaxProx for professional solutions.">
-  <meta name="twitter:image" content="https://username.github.io/images/taxprox-banner.png">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="https://username.github.io/images/favicon.ico" type="image/x-icon">
-  
-  <!-- Styles -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Base Styles */
+    :root {
+      --primary-color: #0066cc;
+      --secondary-color: #1a3e6d;
+      --accent-color: #ffaa00;
+      --text-color: #333;
+      --light-bg: #f8f9fa;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
     }
-    header {
-      background: #0066cc;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
     }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
+
+    /* Header Styles */
+    .header {
+      background: var(--primary-color);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       position: fixed;
-      bottom: 0;
       width: 100%;
+      top: 0;
+      z-index: 1000;
     }
-    .contact {
-      margin-top: 20px;
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,102,204,0.9), rgba(0,102,204,0.8)),
+                  url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Services Section */
+    .services {
+      padding: 4rem 2rem;
+      background: var(--light-bg);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .services-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 4rem 2rem;
+      background: white;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-form {
+      background: var(--light-bg);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--secondary-color);
+      color: white;
+      padding: 3rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TaxProx</h1>
-    <p>Auditors & Tax Practitioners</p>
+  <header class="header">
+    <nav class="nav-container">
+      <a href="/" class="logo">TaxProx</a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Accounting Services</li>
-      <li>Income Tax Filing</li>
-      <li>GST Services</li>
-      <li>Auditing Services</li>
-      <li>Project Report Preparation</li>
-      <li>Trade Mark Registration</li>
-      <li>Company, LLP, or Partnership Formation</li>
-      <li>Pan Card Services</li>
-      <li>Other Business Services</li>
-    </ul>
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> Edakkara, Nilambur Taluk, Malappuram District</p>
-    <p><strong>Phone:</strong> <a href="tel:+919846224226">9846224226</a></p>
-    <p><strong>Email:</strong> <a href="mailto:taxprox.in@gmail.com">taxprox.in@gmail.com</a></p>
+
+  <!-- <section class="hero">
+    <h1>Professional Tax & Business Services in Edakkara</h1>
+    <p>Your Trusted Partner for Tax Solutions, Company Registration & Compliance Services</p>
+    <a href="#contact" class="cta-button">Schedule Consultation</a>
+  </section> -->
+
+  <section class="services" id="services">
+    <br>
+    <br>
+    <br>
+    <div class="section-title">
+      <h2>Our Professional Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-file-invoice-dollar service-icon"></i>
+        <h3>Income Tax Filing</h3>
+        <p>Expert tax preparation and filing services for individuals & businesses</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-building service-icon"></i>
+        <h3>Company Registration</h3>
+        <p>LLP, Partnership, and Private Limited Company formation services</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-landmark service-icon"></i>
+        <h3>GST Services</h3>
+        <p>Registration, filing, and compliance management</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-id-card service-icon"></i>
+        <h3>PAN Card Services</h3>
+        <p>New applications, corrections, and updates</p>
+      </div>
+    </div>
   </section>
-  <footer>
-    <p>&copy; 2025 TaxProx. All Rights Reserved.</p>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div>
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Edakkara, Nilambur Taluk<br>Malappuram District, Kerala</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919846224226">+91 98462 24226</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:taxprox.in@gmail.com">taxprox.in@gmail.com</a></p>
+        </div>
+      </div>
+      <!-- <form class="contact-form" action="https://formspree.io/f/[YOUR_FORM_ID]" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="How can we help you?" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form> -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TaxProx</h3>
+        <p>Your Local Business Services Experts</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li>Edakkara, Nilambur</li>
+          <li>Malappuram, Kerala</li>
+          <li>+91 98462 24226</li>
+        </ul>
+      </div>
+    </div>
   </footer>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TaxProx",
+    "image": "https://taxprox.in/logo.jpg",
+    "@id": "https://taxprox.in",
+    "url": "https://taxprox.in",
+    "telephone": "+919846224226",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Edakkara",
+      "addressLocality": "Nilambur Taluk",
+      "addressRegion": "Malappuram",
+      "postalCode": "679334",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.3563443,
+      "longitude": 76.3037475
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    } 
+  }
+  </script>
 </body>
 </html>
