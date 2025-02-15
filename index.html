@@ -1,134 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaxProx - Best Tax Consultants in Edakkara & Chungathara | GST Filing Experts">
+  <meta name="keywords" content="Tax Consultants, GST Filing, Income Tax, Company Registration, PAN Card Services">
+  <meta name="author" content="TaxProx">
   <title>TaxProx | Best Tax Consultants in Edakkara & Chungathara | GST Filing Experts</title>
-
-  <!-- SEO Metadata -->
-  <meta name="description" content="Rated 4.6/5 ★ Top Tax Consultants in Edakkara. Expert Company Registration, GST Filing & PAN Card Services. Serving Nilambur Taluk since 2017. Call 9846224226">
-  
-  <!-- Preload critical resources -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Inline critical CSS -->
-  <style>
-    :root {
-      --primary: #005EB8; /* Better contrast ratio */
-      --secondary: #1a3e6d;
-      --accent: #FF9500; /* WCAG compliant orange */
-      --text: #2D3748;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-    }
-
-    .header {
-      background: var(--primary);
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    }
-
-    /* Defer non-critical CSS */
-    .load-styles {
-      display: none;
-    }
-  </style>
-
-  <!-- Deferred styles -->
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
-  </noscript>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="header" role="banner">
-    <nav class="nav-container" aria-label="Main navigation">
-      <a href="/" class="logo" aria-label="TaxProx Home">TaxProx</a>
-      <button class="mobile-menu" aria-label="Open menu" hidden>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <div class="nav-links" role="navigation">
-        <a href="#services">Services</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <header>
+    <div class="container">
+      <h1>TaxProx</h1>
+      <p>Your Local Business Services Partner</p>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" role="region" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">Top Tax Consultants in Edakkara & Nilambur</h1>
+  <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Top Tax Consultants in Edakkara & Nilambur</h2>
       <p>Rated 4.6/5 ★ Trusted by 200+ Businesses Since 2017</p>
-      <a href="tel:+919846224226" class="cta-button" aria-label="Call us at 9846224226">
-        📞 Call Now
-      </a>
-    </section>
+      <a href="tel:+919846224226" class="btn">📞 Call Now</a>
+    </div>
+  </section>
 
-    <!-- Rest of content remains similar but with added ARIA roles -->
-  </main>
+  <section id="services">
+    <div class="container">
+      <h2>Our Professional Services</h2>
+      <p>Serving: Edakkara, Chungathara, Vazhikkadavu, Pookkottumpadam, Karulai</p>
+      <ul>
+        <li><strong>Income Tax Filing:</strong> Individual & Business Tax Preparation</li>
+        <li><strong>Company Registration:</strong> LLP, Pvt Ltd, Partnership Firms</li>
+        <li><strong>GST Services:</strong> Registration, Filing, Compliance</li>
+        <li><strong>PAN Card Services:</strong> New Applications & Corrections</li>
+      </ul>
+    </div>
+  </section>
 
-  <!-- Load remaining styles after content -->
+  <section id="contact">
+    <div class="container">
+      <h2>Visit Our Office</h2>
+      <address>
+        Edakkara,<br>
+        Nilambur Taluk,<br>
+        Malappuram District,<br>
+        PIN: 679331<br>
+        <a href="tel:+919846224226">+91 98462 24226</a><br>
+        <a href="mailto:taxprox.in@gmail.com">taxprox.in@gmail.com</a>
+      </address>
+      <form id="contactForm">
+        <h3>Send Message</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Quick Links:</p>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>Office Hours: Mon-Sat 9AM-6PM | Sunday: Closed</p>
+      <p>★ <a href="#">Google Business Profile</a></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    window.addEventListener('load', function() {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap';
-      document.head.appendChild(style);
-      
-      const loadStyles = document.createElement('style');
-      loadStyles.textContent = `
-        /* Add remaining styles here */
-        .services-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 1.5rem;
-        }
-        /* Other styles... */
-      `;
-      document.head.appendChild(loadStyles);
-    });
-  </script>
+    $(document).ready(function () {
+      // Modify the POST request
+      $('#contactForm').on('submit', function (e) {
+        e.preventDefault(); // Prevent default form submission
 
-  <!-- Optimized schema markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "TaxProx",
-    "image": ["/logo.webp"],
-    "url": "https://taxprox.in",
-    "telephone": "+919846224226",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Edakkara",
-      "addressLocality": "Nilambur Taluk",
-      "addressRegion": "Malappuram",
-      "postalCode": "679331",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.3563443,
-      "longitude": 76.3037475
-    },
-    "sameAs": ["https://g.page/taxprox"]
-  }
+        // Collect form data
+        const formData = {
+          name: $('#name').val(),
+          email: $('#email').val(),
+          message: $('#message').val()
+        };
+
+        // Send POST request using jQuery AJAX
+        $.ajax({
+          url: 'https://example.com/api/contact', // Replace with your API endpoint
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(formData),
+          success: function (response) {
+            alert('Message sent successfully!');
+            $('#contactForm')[0].reset(); // Reset the form
+          },
+          error: function (error) {
+            console.error('Error:', error);
+            alert('There was an error sending your message. Please try again.');
+          }
+        });
+      });
+    });
   </script>
 </body>
 </html>
